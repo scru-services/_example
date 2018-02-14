@@ -1,3 +1,3 @@
-(function( $ ) {
-	console.log('project');
-}(jQuery));
+// (function( $ ) {
+// 	console.log('project');
+// }(jQuery));
