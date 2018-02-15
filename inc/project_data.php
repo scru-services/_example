@@ -15,8 +15,12 @@
 	// related scru-services
 	$project_referrals = array(
 		array(
-			'title' => 'example',
+			'title' => 'Example',
 			'url' => $domain['protocol'] . 'example.' . $domain['url']
+		),
+		array(
+			'title' => 'What is my IP',
+			'url' => $domain['protocol'] . 'myip.' . $domain['url']
 		),
 	);
 
