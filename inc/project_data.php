@@ -1,28 +1,17 @@
 <?php
 
-	$project_name = 'Example'; // case sensitive for <title> and <h1> tag
-	$project_dir = 'projects/example/';
-
-	$project_subdomain = 'example';
-	$project_subdomain = $domain['protocol'] . $project_subdomain . '.' . $domain['url'];
-
 	$project_id = 0; // same for all languages
 	$project_lang =  'en';
 
-	$project_desc_title = 'example title optimized for SEO'; // goes into a <h2> element
-	$project_desc = 'Unique description optimized for SEO. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'; // goes into a <p> element
+	$project_name = $projects[$project_id][$project_lang]['title']; // case sensitive for <title> and <h1> tag
+	$project_dir = 'projects/'.$projects[$project_id][$project_lang]['slug'].'/';
 
-	// related scru-services
-	$project_referrals = array(
-		array(
-			'title' => 'Example',
-			'url' => $domain['protocol'] . 'example.' . $domain['url']
-		),
-		array(
-			'title' => 'What is my IP',
-			'url' => $domain['protocol'] . 'myip.' . $domain['url']
-		),
-	);
+	$project_subdomain = get_subdomain($projects[$project_id][$project_lang]['slug']);
+
+	$project_desc_title = 'example title optimized for SEO'; // goes into a <h2> element
+	$project_desc = 'Unique description optimized for SEO. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'; // goes into a <p> element, no html
+
+	$project_referrals = [0,1,2];
 
 	// keywords for this project
 	$project_keywords = array('keyword', 'keyword');
