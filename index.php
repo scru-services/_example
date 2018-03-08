@@ -18,11 +18,19 @@
 
 	<div class="result-container">
 
-		<h4>Service</h4>
+		<h4>Fahrenheit</h4>
 
-		<div class="result" contenteditable="true" onclick="document.execCommand('selectAll',false,null)">result</div>
+		<input id="fahrenheit" class="result" type="number" name="fahrenheit" value="0" onclick="document.execCommand('selectAll',false,null)">
 
-	</div>
+	</div><!-- .result.fahrenheit -->
+
+	<div class="result-container">
+
+		<h4>Celsius</h4>
+
+		<input id="celsius" class="result" type="number" name="celsius" value="" onclick="document.execCommand('selectAll',false,null)">
+
+	</div><!-- .result.celsius -->
 
 	<!-- scru-service end -->
 
